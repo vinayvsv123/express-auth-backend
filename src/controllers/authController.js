@@ -3,7 +3,7 @@ const bcrypt=require('bcrypt');
 const jwt=require('jsonwebtoken');
 
 const registerUser=async(req,res)=>{
-    console.log('register');
+   // console.log('register');
     try{
         const{username,email,password}=req.body;
         if(!username||!email||!password){
