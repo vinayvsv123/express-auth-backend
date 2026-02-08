@@ -2,7 +2,8 @@ const User=require('../models/user.model');
 const bcrypt=require('bcrypt');
 const jwt=require('jsonwebtoken');
 
-const registeruser=async(req,res)=>{
+const registerUser=async(req,res)=>{
+    console.log('register');
     try{
         const{username,email,password}=req.body;
         if(!username||!email||!password){
